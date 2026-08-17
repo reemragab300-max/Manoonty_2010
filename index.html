@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>منونتي 🏡❤️</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:Tahoma,Arial,sans-serif;
+  background:linear-gradient(135deg,#fff0f5,#f8f0ff,#fffaf0);
+  color:#4b3140;min-height:100vh
+}
+button,input{font:inherit}
+.lock{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  padding:24px;text-align:center
+}
+.card{
+  width:min(430px,100%);background:#ffffffd9;backdrop-filter:blur(12px);
+  border:1px solid #fff;border-radius:28px;padding:34px 24px;
+  box-shadow:0 18px 60px #8d58752b
+}
+.heart{font-size:58px;animation:pulse 1.8s infinite}
+h1{margin:8px 0 10px;font-size:31px}
+p{line-height:1.9}
+input{
+  width:100%;padding:15px 18px;border-radius:16px;border:1px solid #e5c9d8;
+  outline:none;text-align:center;background:#fff;margin:10px 0
+}
+button{
+  border:0;border-radius:16px;padding:14px 24px;cursor:pointer;
+  background:#d96b9a;color:white;font-weight:bold;box-shadow:0 8px 22px #d96b9a44
+}
+#error{color:#c54d73;min-height:24px}
+#site{display:none}
+header{text-align:center;padding:58px 20px 30px}
+header h1{font-size:42px}
+.subtitle{font-size:18px}
+.section{width:min(1050px,92%);margin:0 auto 45px}
+.message{
+  background:#fff9fc;border-radius:26px;padding:28px;
+  box-shadow:0 10px 35px #8d58751c;line-height:2;font-size:18px
+}
+.gallery{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px
+}
+.gallery img{
+  width:100%;height:260px;object-fit:cover;border-radius:20px;
+  box-shadow:0 8px 25px #00000018;transition:.25s
+}
+.gallery img:hover{transform:translateY(-4px) scale(1.01)}
+.memory{margin:0;background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 8px 25px #00000018}
+.memory img{display:block;width:100%;height:260px;object-fit:cover}
+.memory figcaption{padding:15px 15px 18px;text-align:center;line-height:1.7}
+.memory figcaption strong{display:block;font-size:17px;margin-bottom:5px}
+.memory figcaption span{display:block;font-size:14px;color:#6b5360}
+.final-letter{line-height:2.15}.final-letter p{margin:0 0 18px}
+footer{text-align:center;padding:25px 15px 45px;font-size:15px}
+.birthday{
+  text-align:center;background:#fff;border-radius:26px;padding:28px;
+  box-shadow:0 10px 35px #8d58751c;margin-bottom:28px
+}
+.age{font-size:58px;font-weight:800;margin:8px 0}
+.music{
+  background:#fff0f6;border-radius:24px;padding:22px;text-align:center;
+  box-shadow:0 10px 30px #8d58751c
+}
+.music iframe{width:100%;max-width:720px;height:405px;border:0;border-radius:18px}
+@media(max-width:600px){.music iframe{height:220px}}
+@keyframes pulse{50%{transform:scale(1.08)}}
+</style>
+</head>
+<body>
+
+<div class="lock" id="lock">
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>إلى منونتي</h1>
+    <p>الموقع ده معمول مخصوص ليكي<br>ومش هيفتح غير بكلمة السر 👀🎀</p>
+    <input id="pass" type="password" placeholder="اكتبي كلمة السر">
+    <button onclick="unlock()">افتحي المفاجأة ✨</button>
+    <div id="error"></div>
+  </div>
+</div>
+
+<main id="site">
+  <header>
+    <div class="heart">💗</div>
+    <h1>منونتي 🏡❤️</h1>
+    <div class="subtitle">بيتك الصغير هنا.. رفيقة دربي 🫂❤️</div>
+  </header>
+
+  <section class="section">
+    <div class="birthday">
+      <div style="font-size:42px">🎂🎀</div>
+      <div class="age">16 سنة</div>
+      <h2>كل سنة وإنتِ منوّرة حياتنا يا منونتي 🏡❤️</h2>
+      <p>
+        النهارده مش يوم عادي، النهارده بنحتفل بإنك كبرتي سنة جديدة
+        وبكل الذكريات الحلوة اللي عشناها سوا. أتمنى الـ16 سنة الجايين
+        يكونوا أحلى وأهدى وأجمل، وتفضلي دايمًا بنفس القلب والضحكة
+        اللي بيخلّوا أي يوم أحلى.
+      </p>
+      <p>
+        من أول ذكرى بينا لحد كل موقف لسه هنعيشه، نفسي أفضل جنبك
+        ونفضل نكبر سوا سنة ورا سنة. كل سنة وإنتِ صاحبتي ورفيقة دربي
+        وأختي اللي اخترتها ❤️🫂
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="music">
+      <h2>🎶 أغنيتنا</h2>
+      <p>«كل سنة» بقت جوّه موقع منونتي مخصوص عشان تفضل الذكرى معاكي ❤️</p>
+      <video controls preload="metadata" style="width:100%;max-width:720px;border-radius:18px;display:block;margin:auto">
+        <source src="song.mp4" type="video/mp4">
+        المتصفح بتاعك لا يدعم تشغيل الفيديو.
+      </video>
+      <p style="font-size:14px">اضغطي تشغيل 🎵 والأغنية هتشتغل من الموقع نفسه.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="message">
+      <h2>إلى منونتي.. صاحبة أجمل الذكريات ❤️</h2>
+      <p>
+        يمكن الكلام مهما كان حلو مش هيقدر يوصف مكانتك عندي،
+        بس كان لازم أعملك حاجة تفضل معاكي وتفكرك إن في حد
+        بيحب وجودك في حياته وبيفرح بكل لحظة بتجمعه بيكي.
+      </p>
+      <p>
+        إنتِ من الناس اللي وجودهم مش بيتعوض، والضحكة معاكي ليها طعم تاني،
+        وحتى أبسط المواقف بتتحول لذكرى بنفتكرها ونضحك عليها بعدين.
+        يا رب كل سنة جديدة من عمرك تاخدي معاها فرحة أكبر وذكريات أحلى،
+        ونفضل دايمًا رفيقتين لبعض مهما الأيام كبرت بينا. 🫂🏡❤️
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>ذكرياتنا 📸</h2>
+    <div class="gallery">
+      <figure class="memory">
+        <img src="photo1.jpg" alt="الجمال ده محتاج كلام؟ 😭❤️">
+        <figcaption><strong>الجمال ده محتاج كلام؟ 😭❤️</strong><span>حتى الصورة لوحدها كفاية تقول قد إيه منونتي جميلة وروحها حلوة.</span></figcaption>
+      </figure>
+      <figure class="memory">
+        <img src="photo2.jpg" alt="منونتي اللي بتخطف العين 🎀">
+        <figcaption><strong>منونتي اللي بتخطف العين 🎀</strong><span>في صور بتتحب من أول نظرة.. ودي واحدة منهم، عشان صاحبتها أصلًا مميزة.</span></figcaption>
+      </figure>
+      <figure class="memory">
+        <img src="photo3.jpg" alt="جمال هادي على قدّه.. بس خطير 🥹">
+        <figcaption><strong>جمال هادي على قدّه.. بس خطير 🥹</strong><span>الصورة دي فيها هدوء ونعومة كده يخلوكي تبصي عليها وتبتسمي من غير ما تحسي.</span></figcaption>
+      </figure>
+      <figure class="memory">
+        <img src="photo4.jpg" alt="إحنا لما بنكون سوا 🫂❤️">
+        <figcaption><strong>إحنا لما بنكون سوا 🫂❤️</strong><span>أحلى حاجة في الصورة دي إنها مش عن شخصين بس.. دي عن صحوبية وذكريات وضحكة اتجمعت في لقطة واحدة.</span></figcaption>
+      </figure>
+      <figure class="memory">
+        <img src="photo5.jpg" alt="ثنائي الجمال 😂🎀">
+        <figcaption><strong>ثنائي الجمال 😂🎀</strong><span>لما الاتنين يجتمعوا في صورة واحدة، النتيجة بتبقى ضحك وحب وذكريات كتير.</span></figcaption>
+      </figure>
+      <figure class="memory">
+        <img src="photo6.jpg" alt="أهو ده شكلنا وإحنا بنفكر في مصايب جديدة 😂❤️">
+        <figcaption><strong>أهو ده شكلنا وإحنا بنفكر في مصايب جديدة 😂❤️</strong><span>الصورة دي لوحدها فيها روح الصحوبية اللي محدش يفهمها غيرنا.</span></figcaption>
+      </figure>
+      <figure class="memory">
+        <img src="photo7.jpg" alt="لما الهزار ياخدنا بعيد 😂">
+        <figcaption><strong>لما الهزار ياخدنا بعيد 😂</strong><span>مش كل الصور لازم تكون شيك.. في صور قيمتها إنها بتفكرنا قد إيه كنا مبسوطين وإحنا بنهزر.</span></figcaption>
+      </figure>
+      <figure class="memory">
+        <img src="photo8.jpg" alt="من أجمل الصور اللي بتجمعنا ❤️">
+        <figcaption><strong>من أجمل الصور اللي بتجمعنا ❤️</strong><span>لقطة بسيطة بس فيها قرب وراحة وونس.. وده بالظبط اللي بحبه في صحبتنا.</span></figcaption>
+      </figure>
+      <figure class="memory">
+        <img src="photo9.jpg" alt="إحنا والـ filters في عالم تاني 😂🐶">
+        <figcaption><strong>إحنا والـ filters في عالم تاني 😂🐶</strong><span>الصورة دي دليل إننا ممكن نطلع بأي شكل ونفضل برضه بنضحك من قلبنا.</span></figcaption>
+      </figure>
+      <figure class="memory">
+        <img src="photo10.jpg" alt="صحبتي.. وقطعة من قلبي 🏡❤️">
+        <figcaption><strong>صحبتي.. وقطعة من قلبي 🏡❤️</strong><span>الصورة دي من الصور اللي نفسي تفضل عندي سنين، عشان تفضل فاكرانا بالوقت الحلو اللي جمعنا.</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="message final-letter">
+      <h2>وأخيرًا.. منونتي ❤️</h2>
+      <p>
+        وأخيرًا حابة أقولك إن مهما حاولت أكتب ومهما قلت كلام، مش هعرف أوصفلك
+        قد إيه أنا بحبك وقد إيه وجودك في حياتي فارق معايا. إنتِ مش مجرد صاحبة
+        عابرة في حياتي، إنتِ واحدة من الناس اللي دخلوا قلبي من غير استئذان
+        وبقوا جزء من أيامي وذكرياتي وتفاصيلي.
+      </p>
+      <p>
+        عايزاكي تعرفي إني دايمًا مصدقاكي وواثقة فيكي وفي كل حاجة بتعمليها.
+        حتى لو الدنيا خلتك في يوم تشكي في نفسك أو تحسي إنك مش قادرة،
+        أنا هفضل أقولك إنك تقدري وإنك أقوى وأشطر وأجمل مما تتخيلي.
+        هفضل واثقة في قراراتك وفي أحلامك وفي كل خطوة بتاخديها،
+        وهفضل أشجعك من قلبي وأفرح بأي نجاح تحققيه كأنه نجاحي أنا.
+      </p>
+      <p>
+        ولو في يوم الدنيا ضغطت عليكي أو حسيتِ إنك لوحدك، افتكري إنك مش لوحدك.
+        أنا موجودة، وهفضل جنبك على قد ما أقدر، في أيامك الحلوة قبل الصعبة،
+        وقت ضحكتك ووقت زعلك، وقت ما تكوني عارفة إنتِ عايزة إيه
+        ووقت ما تكوني محتارة ومش عارفة تاخدي أنهي طريق.
+        مش هقولك إن كل حاجة هتبقى سهلة، بس هقولك إني أتمنى أفضل جنبك
+        وإحنا بنعدي كل حاجة واحدة واحدة.
+      </p>
+      <p>
+        نفسي أشوفك دايمًا مبسوطة ومرتاحة وفخورة بنفسك، ونفسي أشوف كل حاجة
+        نفسك فيها بتتحقق قدام عيني. ونفسي مهما كبرنا واتغيرت الأيام
+        تفضل بينا نفس الضحكة ونفس الأمان ونفس الإحساس إن في واحدة
+        تقدر تحكيلها كل حاجة من غير خوف ولا تردد.
+      </p>
+      <p>
+        شكرًا على كل لحظة حلوة، وكل ضحكة، وكل موقف، وكل مرة كنتِ فيها
+        جنبي حتى من غير ما أطلب. شكرًا إنك منونتي، وشكرًا إن عندي
+        صاحبة أقدر أقول عليها بجد إنها رفيقة دربي.
+      </p>
+      <p>
+        كل سنة وإنتِ معايا، وكل سنة وإنتِ أقرب وأغلى وأحلى.
+        وربنا يكتبلك في كل سنة جاية فرحة أكبر من اللي قبلها،
+        ويحققلك كل حاجة نفسك فيها، ويحفظ قلبك وضحكتك وأيامك الحلوة.
+        وأنا؟ هفضل أحبك وأدعمك وأفتخر بيكي وأكون جنبك على قد ما أقدر.
+        ❤️🏡🫂
+      </p>
+      <p style="margin-top:28px;font-size:22px;font-weight:bold;text-align:center">
+        من ريم<br>
+        رفيقة دربك ❤️
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    معمول مخصوص لمنونتي ❤️<br>
+    رفيقة دربي دائمًا وأبدًا.
+  </footer>
+</main>
+
+<script>
+function unlock(){
+  const value = document.getElementById("pass").value;
+  const error = document.getElementById("error");
+  if(value === "رفيقة دربي"){
+    document.getElementById("lock").style.display = "none";
+    document.getElementById("site").style.display = "block";
+  }else{
+    error.textContent = "الكلمة مش صح يا منونتي 😭❤️";
+  }
+}
+document.getElementById("pass").addEventListener("keydown",e=>{
+  if(e.key==="Enter") unlock();
+});
+</script>
+</body>
+</html>
